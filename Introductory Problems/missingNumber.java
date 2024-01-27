@@ -19,6 +19,4 @@ public class missingNumber {
         
         sc.close();
     }
-
-    
 }
