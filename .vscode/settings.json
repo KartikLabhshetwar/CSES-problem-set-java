@@ -1,0 +1,10 @@
+{
+    "[java]": {
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[javascript]": {
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
