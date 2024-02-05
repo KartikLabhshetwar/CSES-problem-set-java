@@ -1,21 +1,13 @@
 import java.util.*;
-
 public class TrailingZeros {
-  public static void main(String[] args) {
-      try (Scanner sc = new Scanner(System.in)) {
-        long n = sc.nextLong();
-          long fact = 1;
-          int count = 0;
-          
-            for (int i = 1; i <= n; i++) {
-                fact *= i;
-                while (fact % 10 == 0) {
-                    fact /= 10;
-                    count++;
-                }
-                fact %= 1000000000000L;
+    public static void main(String[] args) {
+        try (Scanner sc = new Scanner(System.in)) {
+            long n = sc.nextInt();
+            int count = 0;
+            for (int i = 5; n / i >= 1; i *= 5) {
+                count += n / i;
             }
             System.out.println(count);
+        }
     }
-  }
 }
