@@ -7,7 +7,7 @@ public class CoinPiles {
             while (t-- > 0) {
                 int a = sc.nextInt();
                 int b = sc.nextInt();
-                if ((a + b) % 3 == 0 && Math.min(a, b) * 2 >= Math.max(a, b)) {
+                if ((2*a - b) % 3 == 0 && (2*b - a) % 3 == 0 && (2*a - b) >= 0 && (2*b - a) >= 0){
                     System.out.println("YES");
                 } else {
                     System.out.println("NO");
