@@ -2,15 +2,16 @@ import java.util.*;
 
 public class AppleDivision {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        long[] apples = new long[n];
-        long sum = 0;
-        for (int i = 0; i < n; i++) {
-            apples[i] = sc.nextLong();
-            sum += apples[i];
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            long[] apples = new long[n];
+            long sum = 0;
+            for (int i = 0; i < n; i++) {
+                apples[i] = sc.nextLong();
+                sum += apples[i];
+            }
+            System.out.println(minDiff(apples, 0, 0, sum));
         }
-        System.out.println(minDiff(apples, 0, 0, sum));
     }
 
     public static long minDiff(long[] apples, int i, long sum1, long sum2) {
